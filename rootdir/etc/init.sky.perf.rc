@@ -9,11 +9,6 @@ on property:sys.boot_completed=1
     copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
 on property:vendor.post_boot.parsed=1
-    # Setup runtime cpusets
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/background/cpus 0-1
-    write /dev/cpuset/system-background/cpus 0-3
-
     # Configure CPU input boost
     write /proc/sys/walt/input_boost/input_boost_freq "1324800 0 0 0 0 0 0 0"
     write /proc/sys/walt/input_boost/input_boost_ms 150
