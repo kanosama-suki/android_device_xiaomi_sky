@@ -77,21 +77,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default
 
-PRODUCT_PACKAGES += \
-    libvolumelistener
-
-# AGM
-PRODUCT_PACKAGES += \
-    agmcap \
-    agmcompressplay\
-    agmplay \
-    cplay \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
-    libagmmixer \
-    vendor.qti.hardware.AGMIPC@1.0-service
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
@@ -133,8 +118,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
     android.hardware.boot@1.2-impl-qti.recovery \
     android.hardware.boot@1.2-service \
-    bootctrl.parrot \
-    bootctrl.parrot.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
@@ -201,9 +184,7 @@ PRODUCT_COPY_FILES += \
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
-    libgralloc.qti \
     libgui_vendor \
-    libqdMetaData \
     vendor.display.config@1.11.vendor \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator@1.0.vendor \
@@ -235,8 +216,6 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-qti \
-    android.hardware.health@2.1-impl-qti.recovery \
     android.hardware.health@2.1-service
 
 # HIDL
@@ -365,9 +344,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1 \
     vendor.qti.hardware.perf@2.3.vendor
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/parrot/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -544,4 +520,3 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
-    libwfdaac_vendor
