@@ -14,9 +14,6 @@ $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 # Inherit from sky device.
 $(call inherit-product, device/xiaomi/sky/device.mk)
 
-## Inherit ih8sn Makefile
-$(call inherit-product, vendor/extra/ih8sn/product.mk)
-
 ## Device identifier
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sky
