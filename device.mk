@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+### miku build
+MIKU_MASTER := Kanosama_suki
+
 # Inherit virtual_ab_ota_product.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
